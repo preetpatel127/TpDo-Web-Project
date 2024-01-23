@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: lightgray;
+}
+
+.container {
+    position: relative;
+    max-width: 800px;
+    padding: 10px;
+    margin: 50px auto;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+
+.container h1 {
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.class1 {
+    width: 100%;
+    display: flex;
+    padding: 26px 2px;
+}
+
+.class1>input[type="text"] {
+    width: 90%;
+    color: black;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 22px;
+    border-radius: 12px;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+.class1>input[type="text"]:hover {
+    background-color: rgb(250, 250, 250);
+}
+
+.class1 button {
+    margin: 0px 12px;
+    background: black;
+    color: whitesmoke;
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.class1 button:hover {
+    color: black;
+    background-color: whitesmoke;
+}
+
+.pendingTask,
+.completeTask {
+    margin: 5px 0px;
+    padding: 20px;
+}
+
+h3 {
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+}
+
+ol {
+    list-style: none;
+    counter-reset: my-counter;
+}
+
+ol li {
+    border-radius: 12px;
+    width: 100%;
+    padding: 18px;
+    margin: 5px 0px;
+    background: rgb(235, 235, 235);
+    font-size: 24px;
+    counter-increment: my-counter;
+}
+
+ol.completeTask li {
+    background: rgb(235, 235, 235);
+}
+
+ol li::before {
+    content: counter(my-counter);
+    background: darkgrey;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 2rem;
+    text-align: center;
+    color: black;
+    margin-right: 1.0rem;
+}
+
+li button {
+    float: right;
+    padding: 5px;
+    font-size: 18px;
+    line-height: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: black;
+    font-family: 'Baloo Bhai', cursive;
+    color: rgb(250, 250, 250);
+    border-radius: 6px;
+}
+
+li button:hover {
+    background-color: rgb(250, 250, 250);
+    color: black;
+}
